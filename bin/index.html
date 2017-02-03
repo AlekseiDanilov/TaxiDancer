@@ -1,65 +1,110 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script><![endif]-->
-    <title></title>
-    <meta name="keywords" content="" />
-    <meta name="description" content="" />
-    <link href="style.css" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="../../assets/ico/favicon.ico">
+
+    <title>Taxi dancer</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="cover.css" rel="stylesheet">
+
+
 </head>
 
 <body>
 
-<div class="wrapper">
+<div class="site-wrapper">
 
-    <header class="header">
+    <div class="site-wrapper-inner">
 
-    </header><!-- .header-->
+        <div class="cover-container">
 
-    <main class="content">
+            <div class="masthead clearfix">
+                <div class="inner">
+                    <h3 class="masthead-brand">ОНЛАЙН-КАЛЬКУЛЯТОР</h3>
+                    <ul class="nav masthead-nav">
+                        <li class="active"><a href="#">Банкам</a></li>
+                        <li><a href="#">Брокерам</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                </div>
+            </div>
 
-        <div class = form>
+            <div class="inner cover">
+                <h1 class="cover-heading">Рассчитайте стоимость банковской гарантии</h1>
+                <p> &nbsp </p>
 
-            <p> &nbsp </p>
+            <input class="summ" placeholder="Сумма гарантии" />
+            <input class="timeper" placeholder="Срок гарантии" />
+
+<!--=================================================RADIOBUTTON====================================================-->
+    <div class="radioblock">
+        <div class="radiobut">
+                <div>
+                <input type="radio" id="f-option" name="selector" class="radio">
+                <label for="f-option">44-ФЗ</label>
+                </div>
+
+                <div>
+                <input type="radio" id="s-option" name="selector" class="radio">
+                <label for="s-option" >223-ФЗ</label>
+                </div>
+
+                <div>
+                <input type="radio" id="t-option" name="selector" class="radio">
+                <label for="t-option">615-ПП (185-ФЗ)</label>
+                </div>
+        </div>
+    </div>
 
 
-            <p> &nbsp; &nbsp; &nbsp; <input maxlength="30" name="Summ"  size="20"
-                                            type="text" placeholder="Сумма гарантии" /></p>
+            <div class="radiobut1">
+                <div>
+                <input type="radio" id="a-option" name="exe" class="radio">
+                <label for="t-option">Исполнение</label>
+                </div>
 
-            <p> &nbsp </p>
+                <div>
+                 <input type="radio" id="b-option" name="part" class="radio">
+                 <label for="t-option">Участие</label>
+                </div>
+            </div>
 
-            <p> &nbsp; &nbsp; &nbsp; <input maxlength="30" name="Срок гарантии" size="20"
-                                            type="text" placeholder="Срок гарантии" /></p>
+                <h2 style="margin-bottom: 0px">Наличие аванса</h2>
 
-            <p> &nbsp </p>
+             <div class="radiobut2">
+                <div>
+                    <input type="radio" id="a-option" name="yes" class="radio">
+                    <label for="t-option">Да</label>
+                </div>
 
-            <p><input name="44-фз" type="radio" />&nbsp;44-ФЗ<input name="223-фз"
-                                                                    type="radio" />&nbsp;223-ФЗ&nbsp;<input name="615-пп"
-                                                                                                            type="radio" />&nbsp;615-ПП (185-ФЗ)</p>
+                <div>
+                    <input type="radio" id="a-option" name="no" class="radio">
+                    <label for="t-option">Нет</label>
+                </div>
+             </div>
 
-            <p> &nbsp </p>
 
-            <p><input name="Исполнение " type="radio" />Исполнение&nbsp;<input name="Участие"
-                                                                               type="radio" />&nbsp;Участие</p>
+                <button class="btn btn-lg btn-default">Рассчитать</button>
 
-            <p> &nbsp </p>
+            </div>
 
-            <p>Наличие аванса:</p>
+            <div class="mastfoot">
 
-            <p><input name="Да" type="radio" />&nbsp;Да&nbsp; &nbsp; &nbsp; &nbsp;<input name="Нет"
-                                                                                         type="radio" />&nbsp;Нет</p>
-            <p> &nbsp </p>
+            </div>
 
-            <p><input name="button1" type="button" value="Рассчитать " /></p>
-        </div> <!-- form -->
-    </main><!-- .content -->
+        </div>
 
-</div><!-- .wrapper -->
+    </div>
 
-<footer class="footer">
-
-</footer><!-- .footer -->
-
+</div>
 </body>
 </html>
