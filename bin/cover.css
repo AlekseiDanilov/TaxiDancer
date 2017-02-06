@@ -174,5 +174,3 @@ input.radio:focus ~ label:before {
     transition-duration: 0.4s;
     cursor: pointer;
 }
-
-

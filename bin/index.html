@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="shortcut icon" href="../../assets/ico/favicon.ico">
+    <link rel="shortcut icon" href="../../assets/ico/f  avicon.ico">
 
     <title>Taxi dancer</title>
 
@@ -45,7 +45,22 @@
             <input class="summ" placeholder="Сумма гарантии" />
             <input class="timeper" placeholder="Срок гарантии" />
 
-<!--=================================================RADIOBUTTON====================================================-->
+                <script type="text/javascript">
+                    function showHide(element_id) {
+
+                        if (document.getElementById(element_id)) {
+                            var obj = document.getElementById(element_id);
+                            if (obj.style.display != "block") {
+                                obj.style.display = "block"; }
+                            else obj.style.display = "none";
+                        }
+                        else alert("Элемент с id: " + element_id + " не найден!");
+                    }
+                </script>
+
+
+
+                <!--=================================================RADIOBUTTON====================================================-->
     <div class="radioblock">
         <div class="radiobut">
                 <div>
@@ -59,7 +74,7 @@
                 </div>
 
                 <div>
-                <input type="radio" id="t-option" name="selector" class="radio">
+                <input  type="radio" id="t-option" name="selector" class="radio" onclick="showHide('block_id')">
                 <label for="t-option">615-ПП (185-ФЗ)</label>
                 </div>
         </div>
@@ -72,8 +87,8 @@
                 <label for="t-option">Исполнение</label>
                 </div>
 
-                <div>
-                 <input type="radio" id="b-option" name="part" class="radio">
+                <div id="block_id">
+                 <input  type="radio" id="b-option" name="part" class="radio">
                  <label for="t-option">Участие</label>
                 </div>
             </div>
@@ -82,19 +97,17 @@
 
              <div class="radiobut2">
                 <div>
-                    <input type="radio" id="a-option" name="yes" class="radio">
+                    <input type="radio" id="c-option" name="yes" class="radio">
                     <label for="t-option">Да</label>
                 </div>
 
                 <div>
-                    <input type="radio" id="a-option" name="no" class="radio">
+                    <input type="radio" id="d-option" name="no" class="radio">
                     <label for="t-option">Нет</label>
                 </div>
              </div>
 
-
-                <button class="btn btn-lg btn-default">Рассчитать</button>
-
+                <input type="button" value="Расчитать" class="btn btn-lg btn-default" onclick="parent.location='TableOption/index.html'"/>
             </div>
 
             <div class="mastfoot">
